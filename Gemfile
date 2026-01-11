@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-# Use the actual jekyll gem instead of the github-pages wrapper
-gem "jekyll", "~> 4.3.2"
+# Use GitHub Pages' supported Jekyll stack.
+gem "github-pages", group: :jekyll_plugins
 
 # Add any plugins you were using
 group :jekyll_plugins do
