@@ -1,7 +1,11 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'jekyll'
+# Use the actual jekyll gem instead of the github-pages wrapper
+gem "jekyll", "~> 4.3.2"
 
-group :test do
-  gem 'html-proofer'
+# Add any plugins you were using
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  # Add other plugins here (e.g., jekyll-sitemap, jekyll-paginate)
 end
